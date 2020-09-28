@@ -1,0 +1,323 @@
+@import './tailwind.css';
+
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+
+/* Variables */
+:root {
+  --white: #ffffff;
+  --gray: #C9C9C9;
+  --black: #333333;
+  --light-black: #616161;
+  --primary: #005105;
+  --secondary: #004C3F;
+  --blue: #6C63FF;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'gt-super';
+  src: url("../assets/fonts/gt-super-display-medium.woff2");
+}
+
+@font-face {
+  font-family: 'quicksand-light';
+  src: url("../assets/fonts/Quicksand-Light.ttf");
+}
+
+@font-face {
+  font-family: 'quicksand-regular';
+  src: url("../assets/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'quicksand-medium';
+  src: url("../assets/fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'quicksand-semi';
+  src: url("../assets/fonts/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'quicksand-bold';
+  src: url("../assets/fonts/Quicksand-Bold.ttf");
+}
+
+.f-gt {
+  font-family: 'gt-super';
+}
+
+.f-light {
+  font-family: 'quicksand-light';
+}
+
+.f-regular {
+  font-family: 'quicksand-regular';
+}
+
+.f-medium {
+  font-family: 'quicksand-medium';
+}
+
+.f-semi {
+  font-family: 'quicksand-semi';
+}
+
+.f-bold {
+  font-family: 'quicksand-bold';
+}
+
+p {
+  font-family: 'quicksand-regular';
+}
+
+body {
+  font-family: 'quicksand-regular';
+}
+
+h5,
+h6 {
+  font-family: 'quicksand-semi';
+}
+
+
+/* Colours */
+
+.c-black {
+  color: var(--black);
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.c-green {
+  color: var(--primary);
+}
+
+.c-gray {
+  color: var(--gray);
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+.bg-black {
+  background: var(--black);
+}
+
+.bg-light {
+  background-color: var(--gray) !important;
+}
+
+.bg-light-half {
+  background-image: linear-gradient(to bottom,   #DDDDDD 50%,  #ffffff 50%) ;
+}
+
+.bg-dark {
+  background: var(--light-black);
+}
+
+* {
+  color: #333333;
+}
+
+/* Sizing */
+
+h1 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 27px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+/* Components */
+
+.cta-btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 15px 15px;
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+  text-transform: capitalize;
+  border: solid 1px transparent;
+}
+
+header .cta-btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 15px 20px;
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+  text-transform: capitalize;
+}
+
+.cta-btn:hover {
+  color: var(--primary);
+  background: var(--white);
+  text-decoration: none;  
+  border-radius: 0 15px 0 0;
+  border: solid 1px var(--primary);
+}
+
+form {
+  background: var(--white);
+  border-radius: 5px;
+  height: 70px;
+}
+
+.form-btn {
+  padding: 11px 32px;
+}
+
+input {
+  background: transparent;
+  height: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+/* Header Link */
+
+header .nav-item a.nav-link:after {    
+  background: var(--secondary);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header .nav-item a.nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* Custom */
+
+.hero {
+  /* background-image: url("../assets/hero-bg.png");
+  background-position: center center;
+  background-size: cover;
+  min-height: 90vh; */
+  padding-top: 100px;
+}
+
+.header-logo {
+  height: 40px;
+}
+
+.first-step::before {
+  content: "1";
+  font-size: 3.5em;
+  font-family: "gt-super";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: #C9C9C970;
+  z-index: -10;
+}
+
+.second-step::before {
+  content: "2";
+  font-size: 3.5em;
+  font-family: "gt-super";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: #C9C9C970;
+  z-index: -10;
+}
+
+.third-step::before {
+  content: "3";
+  font-size: 3.5em;
+  font-family: "gt-super";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: #C9C9C970;
+  z-index: -10;
+}
+
+.fourth-step::before {
+  content: "4";
+  font-size: 3.5em;
+  font-family: "gt-super";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: #C9C9C970;
+  z-index: -10;
+}
+
+.view-reports::before {
+  content: "View Reports";
+  font-size: 3.5em;
+  font-family: "gt-super";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: #C9C9C970;
+  z-index: -10;
+}
+
+.report-comment::before {
+  content: "Comment";
+  font-size: 3.5em;
+  font-family: "gt-super";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  color: #C9C9C970;
+  z-index: -10;
+}
+
+/* Media Queries */
+
+/* Tablet - Laptop */
+@media (min-width: 1000px) {
+  .translate-up-10 {
+    transform: translateY(-10em);
+  }
+
+  .min-h-500 {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .container.header {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}

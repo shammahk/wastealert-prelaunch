@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WasteAlert Pre-launch</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="min-h-screen">
+  <div id="top"></div>
+  <header class="fixed top-0 left-0 w-full bg-white z-50">
+    <nav class="container mx-auto py-5 flex justify-between items-center">
+      <a href="#top">
+        <img src="./assets/logo text.svg" alt="WasteAlert" class="header-logo" />
+      </a>
+      <ul class="header-nav flex items-center">
+        <li>
+          <a href="#subscribe" class="cta-btn">
+            Get Notice
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container mx-auto py-20 md:py-32">
+        <h1 class="f-gt c-black font-bold mb-5 leading-tight">
+          A Healthy Earth =
+          <span class="c-green">
+            Better Life
+          </span>
+        </h1>
+        <h3 class="w-full md:w-3/5 c-black">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quam culpa tempore molestiae nobis sapiente dolorum ducimus, 
+          pariatur rerum voluptatibus architecto earum dolores sequi 
+          doloribus! Similique ab commodi officiis molestiae corporis 
+          consequatur eveniet, quas eum, ratione cumque delectus rem 
+          excepturi dignissimos? Maxime voluptatem expedita ipsam 
+          dicta eveniet commodi maiores odio iure.
+        </h3>
+        <div class="flex items-center mt-10">
+          <a href="#subscribe" class="cta-btn">
+            Join Pre-launch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="system lg:flex container mx-auto pt-10 lg:pt-32 pb-10">
+      <div class="md:px-4 lg:order-2 translate-up-10 mb-10 lg:mb-0">
+        <img src="./assets/grouped-mockup.svg" alt="" />
+      </div>
+      <div class="md:px-4 w-full lg:w-1/2 flex-shrink-0 lg:order-1">
+        <h4 class="c-black f-gt font-bold mb-4">
+          How we help make the Earth healthy.
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Recusandae iusto voluptatem quod odio debitis beatae 
+          deserunt, ea in. Nam, labore facere. Sit veritatis sed 
+          nostrum laboriosam dignissimos eveniet error officia.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="container mx-auto pt-10 md:pt-32 pb-20">
+      <h4 class="c-black f-gt font-bold mb-20 md:text-center">
+        Reporting is super easy.
+      </h4>
+      <div class="md:grid grid-cols-2 gap-10 mb-20">
+        <div class="mb-10">
+          <h5 class="c-black f-gt font-bold mb-4 pl-4 md:pl-10 first-step relative">
+            Click Reports on Nav bar.
+          </h5>
+          <img src="./assets/create-report.png" alt="" class="min-h-500" />
+          <p>
+            - If you have no previous reports, click "Create First 
+            Report button".
+          </p>
+        </div>
+
+        <div class="mb-10">
+          <h5 class="c-black f-gt font-bold mb-4 pl-4 md:pl-10 second-step relative">
+            Enter report details.
+          </h5>
+          <img src="./assets/new-report.png" alt="" class="min-h-500" />
+          <p>
+            - Add Image from your device.
+          </p>
+          <p>
+            - Or record a live video.
+          </p>
+        </div>
+
+        <div class="mb-10">
+          <h5 class="c-black f-gt font-bold mb-4 pl-4 md:pl-10 third-step relative">
+            Record Video.
+          </h5>
+          <img src="./assets/record-live.png" alt="" class="min-h-500" />
+        </div>
+
+        <div class="mb-10">
+          <h5 class="c-black f-gt font-bold mb-4 pl-4 md:pl-10 fourth-step relative">
+            Upload Video.
+          </h5>
+          <img src="./assets/upload video.png" alt="" class="min-h-500" />
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="container mx-auto pt-10 md:pt-32 pb-20">
+      <h4 class="c-black f-gt font-bold mb-10 md:text-center">
+        View and Comment on Reports
+      </h4>
+      <div class="md:grid grid-cols-2 gap-10 mb-20">
+        <div class="mb-10">
+          <h5 class="c-black f-gt font-bold mb-4 pl-4 md:pl-10 view-reports relative">
+            View reports of others.
+          </h5>
+          <img src="./assets/reports.png" alt=""/>
+        </div>
+
+        <div class="mb-10">
+          <h5 class="c-black f-gt font-bold mb-4 pl-4 md:pl-10 report-comment relative">
+            Comment on reports
+          </h5>
+          <img src="./assets/comment.png" alt=""/>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-20">
+      <h4 class="c-green f-gt font-bold mb-10 md:text-center">
+        Join the Pre-launch
+      </h4>
+      <form onsubmit="submitEmail(data)" id="subscribe" class="input-group w-4/12 mx-auto p-2 flex items-center">
+        <input 
+          type="email" 
+          name="email" 
+          id="email"
+          placeholder="my_email@mail.com" 
+          class="flex-grow px-4" 
+          required
+        >
+        <button class="cta-btn form-btn font-bold rounded-md">
+          Join in
+        </button>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

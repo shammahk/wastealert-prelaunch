@@ -1,0 +1,8 @@
+<svg id="logo_text" data-name="logo text" xmlns="http://www.w3.org/2000/svg" width="175" height="59" viewBox="0 0 175 59">
+  <g id="Rectangle_1074" data-name="Rectangle 1074" fill="#005105" stroke="#004c3f" stroke-width="2">
+    <rect width="59" height="59" rx="10" stroke="none"/>
+    <rect x="1" y="1" width="57" height="57" rx="9" fill="none"/>
+  </g>
+  <text id="WA" transform="translate(9 38)" fill="#fff" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">WA</tspan></text>
+  <text id="WasteAlert" transform="translate(70 37)" fill="#004c3f" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">WasteAlert</tspan></text>
+</svg>
