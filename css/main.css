@@ -321,3 +321,13 @@ header .nav-item a.nav-link:hover:after {
     padding-right: 3.5rem;
   }
 }
+
+/* Small Phones */
+
+@media (max-width: 365px) {
+  
+  .form-btn {
+    padding: 10px 16px;
+    font-size: 0.8em;
+  }
+}
